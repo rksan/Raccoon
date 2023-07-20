@@ -1,5 +1,9 @@
+# coverall
+/.nyc_output
+/coverage
+
 # node.js
-node_modules
+/node_modules
 
 # other files
 *.log

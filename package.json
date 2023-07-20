@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc -p .",
     "test": "nyc mocha -R spec",
-    "coverage": "rm -rf .coverage && mkdir .coverage && npm run test && nyc report --reporter=text-lcov > ./.coverage/lcov.info"
+    "coverage": "rm -rf coverage && mkdir coverage && npm run test && nyc report --reporter=text-lcov > ./coverage/lcov.info"
   },
   "repository": {
     "type": "git",
