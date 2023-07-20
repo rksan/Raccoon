@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc -p .",
+    "pretest": "rm -rf .nyc_output",
     "test": "nyc mocha -R spec",
-    "coverage": "rm -rf coverage && mkdir coverage && npm run test && nyc report --reporter=text-lcov > ./coverage/lcov.info"
+    "precoverage": "rm -rf coverage && mkdir coverage",
+    "coverage": "npm test && nyc report --reporter=lcovonly"
   },
   "repository": {
     "type": "git",
