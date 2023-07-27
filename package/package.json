@@ -1,0 +1,32 @@
+{
+  "name": "@rksan/raccoon",
+  "version": "0.0.1",
+  "description": "Camera package configured only with Web API",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc -d -p .",
+    "pretest": "rm -rf coverage",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rksan/Raccoon.git"
+  },
+  "keywords": [
+    "web",
+    "camera",
+    "photo"
+  ],
+  "author": "rksan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rksan/Raccoon/issues"
+  },
+  "homepage": "https://github.com/rksan/Raccoon#readme",
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.1.6"
+  }
+}
