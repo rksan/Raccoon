@@ -6,7 +6,9 @@
   "scripts": {
     "pretest": "rm -rf coverage",
     "test": "jest",
-    "update": "npm uninstall @rksan/raccoon && npm install ./dev"
+    "uni-raccoon": "pm uninstall @rksan/raccoon",
+    "i-raccoon": "npm install ./dev/rksan-raccoon-0.0.1.tgz",
+    "update": "npm run uni-raccoon && npm run i-raccoon"
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,6 @@
     "ts-node": "^10.9.1"
   },
   "dependencies": {
-    "@rksan/raccoon": "file:dev"
+    "@rksan/raccoon": "file:dev/rksan-raccoon-0.0.1.tgz"
   }
 }

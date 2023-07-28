@@ -27,7 +27,7 @@ jobs:
           cache-dependency-path: "**/package-lock.json"
 
       - run: npm ci # (need) # better than "npm install"
-      - run: npm install ./dev
+      - run: npm run i-raccoon
       - run: npm run test # (need)
 
       - name: Coveralls GitHub Action
