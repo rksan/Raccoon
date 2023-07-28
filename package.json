@@ -1,5 +1,5 @@
 {
-  "name": "raccoon",
+  "name": "raccoon-dev",
   "version": "1.0.0",
   "description": "[![Coverage Status](https://coveralls.io/repos/github/rksan/Raccoon/badge.svg?branch=main)](https://coveralls.io/github/rksan/Raccoon?branch=main)",
   "main": "index.js",
@@ -34,6 +34,6 @@
     "ts-node": "^10.9.1"
   },
   "dependencies": {
-    "@rksan/raccoon": "file:package"
+    "@rksan/raccoon": "file:dev"
   }
 }
