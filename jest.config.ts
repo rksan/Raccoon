@@ -21,7 +21,12 @@ const config = {
   collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  // collectCoverageFrom: undefined,
+  collectCoverageFrom: [
+    "src/**/*.{ts,tsx,js,jsx}",
+    "!src/**/*.d.ts",
+    "dev/dist/**/*.{ts,tsx,js,jsx}",
+    "!dev/dist/**/*.d.ts",
+  ],
 
   // The directory where Jest should output its coverage files
   coverageDirectory: "coverage",
@@ -33,6 +38,7 @@ const config = {
 
   // Indicates which provider should be used to instrument code for coverage
   // coverageProvider: "babel",
+  coverageProvider: "babel",
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
@@ -41,7 +47,7 @@ const config = {
   //   "lcov",
   //   "clover"
   // ],
-  coverageReporters: ["lcovonly"],
+  coverageReporters: ["text", "lcov"],
 
   // An object that configures minimum threshold enforcement for coverage results
   // coverageThreshold: undefined,
@@ -160,6 +166,7 @@ const config = {
   //   "**/__tests__/**/*.[jt]s?(x)",
   //   "**/?(*.)+(spec|test).[tj]s?(x)"
   // ],
+  testMatch: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [
