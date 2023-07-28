@@ -4,10 +4,9 @@
   "description": "[![Coverage Status](https://coveralls.io/repos/github/rksan/Raccoon/badge.svg?branch=main)](https://coveralls.io/github/rksan/Raccoon?branch=main)",
   "main": "index.js",
   "scripts": {
-    "pretest": "rm -rf coverage",
-    "test": "jest --coverage --config=./jest.config.ts",
-    "test-cov": "npm run test && coveralls < ./coverage/lcov.info",
-    "uni-raccoon": "pm uninstall @rksan/raccoon",
+    "pretest": "rm -rf coverage && mkdir coverage",
+    "test": "jest --coverage --config=./jest.config.ts --coverageDirectory=coverage",
+    "uni-raccoon": "npm uninstall @rksan/raccoon",
     "i-raccoon": "npm install ./dev/rksan-raccoon-0.0.1.tgz",
     "update": "npm run uni-raccoon && npm run i-raccoon"
   },

@@ -1,6 +1,6 @@
 # coverall
 /.nyc_output
-/coverage
+#/coverage
 
 # node.js
 /node_modules
