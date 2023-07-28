@@ -1,7 +1,8 @@
 //---------------------
 // dom.ts
 //---------------------
-import { Dom } from "./types";
+import * as Dom from "./types/dom";
+//import { Dom } from "./dom.d";
 
 const createElem = (
   parent: HTMLElement | boolean,

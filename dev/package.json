@@ -2,12 +2,23 @@
   "name": "@rksan/raccoon",
   "version": "0.0.1",
   "description": "Camera package configured only with Web API",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/*",
+    "package.json",
+    "LICENSE",
+    "README"
+  ],
   "scripts": {
-    "build": "tsc -d -p .",
-    "pretest": "rm -rf coverage",
-    "test": "jest"
+    "build": "tsc -p ."
   },
   "repository": {
     "type": "git",
