@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "pretest": "rm -rf coverage",
-    "test": "jest --coverage",
-    "pretest-cov": "rm -rf coverage && mkdir coverage",
-    "test-cov": "jest --coverage",
+    "test": "jest --coverage --config=./jest.config.ts",
+    "test-cov": "npm run test && coveralls < ./coverage/lcov.info",
     "uni-raccoon": "pm uninstall @rksan/raccoon",
     "i-raccoon": "npm install ./dev/rksan-raccoon-0.0.1.tgz",
     "update": "npm run uni-raccoon && npm run i-raccoon"
