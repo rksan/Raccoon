@@ -6,7 +6,7 @@
   "scripts": {
     "pretest": "rm -rf coverage",
     "test-bk": "jest --coverage --no-cache --watchAll=false",
-    "test": "jest",
+    "test": "jest --coverage --coverageDirectory=coverage --coverageReporters=lcov --coverageReporters=text",
     "uni-raccoon": "pm uninstall @rksan/raccoon",
     "i-raccoon": "npm install ./dev/rksan-raccoon-0.0.1.tgz",
     "update": "npm run uni-raccoon && npm run i-raccoon"
