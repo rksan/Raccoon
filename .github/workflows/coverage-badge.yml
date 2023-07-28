@@ -28,7 +28,7 @@ jobs:
 
       - run: npm ci # (need) # better than "npm install"
       - run: npm run i-raccoon
-      - run: npm run test-coveralls # (need)
+      - run: npm run test-cov # (need)
 
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@1.1.3 # (need)
